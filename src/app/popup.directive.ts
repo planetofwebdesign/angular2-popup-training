@@ -1,7 +1,8 @@
 import { Directive, Input, HostListener, ElementRef } from '@angular/core';
 
 @Directive({
-  selector: '[appPopup]'
+  selector: '[appPopup]',
+  exportAs: 'popup'
 })
 export class PopupDirective {
 

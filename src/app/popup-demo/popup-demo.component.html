@@ -1,3 +1,10 @@
-<div class="container" name="popupdiv" appPopup [message]="message">
-    <h1>Header</h1>
+<div class="container" >
+   <div name="popupdiv" appPopup #appPopup="popup" [message]="message">
+       <h1>Header</h1>
+   </div>
+
+   <button class="btn btn-primary" (click)="appPopup.displayMessage()">
+       Click to open dialog message
+   </button>
 </div>
+
